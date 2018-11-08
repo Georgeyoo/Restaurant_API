@@ -2,6 +2,7 @@ const express = require('express');
 
 const PORT = process.env.PORT || 3000;
 const app = express();
+const cors = require('cors');
 
 const restaurants = [
   {
@@ -152,6 +153,7 @@ const restaurants = [
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(cors());
 
 app.get('/api/restaurants', function (req, res) {
   res.json(restaurants);
