@@ -2,6 +2,8 @@
 
 The restaurant API was developed to teach simple GET requests. 
 
+Base URL: `https://restaurant-listings.herokuapp.com/`
+
 This API has a single endpoint:
 
 `GET` `api/restaurants`
